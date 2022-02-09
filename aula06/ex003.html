@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(47, 0, 255);
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: indigo;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Questionário:</h1>
+    <fieldset>
+        Nome: <input type='text' name='nm_pessoa' id='nm_pessoa_js'><br>
+        Sexo: <br><input type="radio" name='sexo' id='masc'><label for="masc"> Masculino</label><br>
+              <input type="radio" name='sexo' id='fem'><label for="fem"> Feminino</label><br>
+        Formação: <select name='formacao'>
+                    <option name='formacao' value='1'>Ensino Fundamental</option>
+                    <option name='formacao' value='2'>Ensino Médio</option>
+                    <option name='formacao' value='3'>Ensino Superior</option>
+                </select>
+                <br><br>
+        <input type='submit' value='Seja Feliz!'>
+    </fieldset>
+
+    <br>
+    <br>
+    Dados obtidos pelo Javascript:
+    <fieldset>
+        <script>
+            var n1 = Number(window.prompt('Informe o peso: '))
+            var n2 = Number(window.prompt('Informa a altura: '))
+            var n3 = (n1 / (n2*n2))
+            var condicao = null
+            if(n3<18.5){
+                condicao = 'Capa de Cangaia'
+            }else if(n3>=18.5 && n3<=24.9){
+                condicao = 'No grau'
+            }else{
+                condicao = 'Infarto em 3, 2, 1...'
+            }
+            alert('O seu IMC é: '+n3.toFixed(10).replace(',','.')+'. '+condicao)
+            alert(`O seu IMC é ${condicao.length}`)
+
+            alert(typeof condicao)
+            
+        </script>
+    </fieldset>
+    
+</body>
+</html>

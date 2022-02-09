@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM!</title>
+    <style>
+        body{
+            background-color: blue;
+            color:white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="primeiroh">Primeiros passos  com o DOM</h1>
+    <p>Aqui vai o resultado, Parágrafo 1</p>
+    <p>Aprendendo a Usar o <strong>DOM</strong> em JavaScript. Parágrafo 2</p>
+    <div id="firstDiv">DIV 1 - Clique em mim 1</div><p></p>
+    <div id="secondDiv">DIV 2 - Clique em mim 2</div><p></p>
+
+    <script> 
+      var dv1 = document.querySelector('div#secondDiv')
+      dv1.style.backgroundColor = 'black'
+      var dv2 = document.querySelector('div#secondDiv')
+      dv2.style.color = 'red'
+
+      document.write(dv1.innerHTML)
+      document.write(dv2.innerHTML)
+      /*
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        var p2 = document.getElementsByTagName('P')[1]
+        document.write(p2.innerHTML)
+
+        var dv1 = document.getElementsByTagName('div')[0]
+        document.write(dv1.innerText)
+        var dv2 = document.getElementsByTagName('div')[1]
+        document.write(dv2.innerHTML)
+
+        var h1 = document.querySelector('h1#primeiroh')
+        h1.style.backgroundColor='red'
+        
+        //Mudando a cor das divs
+        dv1.style.color='red'
+        dv2.style.color='yellow'
+
+
+
+        //Mudando a cor de fundo do corpo
+        var corpo = document.body.style.backgroundColor='black'
+        */
+    </script>
+</body>
+</html>
