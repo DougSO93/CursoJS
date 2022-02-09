@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        body {
+            background-color: greenyellow;
+        }
+
+        font {
+            color: black;
+        }
+
+        h1 {
+            font-size: large, Arial;
+            color: indigo;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Questionário:</h1>
+    <fieldset>
+        Nome: <input type='text' name='nm_pessoa' id='nm_pessoa_js'><br>
+        Sexo: <br><input type="radio" name='sexo' id='masc'><label for="masc"> Masculino</label><br>
+              <input type="radio" name='sexo' id='fem'><label for="fem"> Feminino</label><br>
+        Formação: <select name='formacao'>
+                    <option name='formacao' value='1'>Ensino Fundamental</option>
+                    <option name='formacao' value='2'>Ensino Médio</option>
+                    <option name='formacao' value='3'>Ensino Superior</option>
+                </select>
+                <br><br>
+        <input type='submit' value='Seja Feliz!'>
+    </fieldset>
+    <br>
+    <br>
+    Dados obtidos pelo Javascript:
+    <fieldset>
+        <script>
+            alert('Bem vindo(a)!')
+            var confirmacao = window.confirm('Já viu as aulas anteriores?')
+            var nome = window.prompt('Digite seu nome:')
+
+            if(confirmacao>0){
+                confirmacao = 'Sim';
+            }else{
+                confirmacao = 'Não'
+            }
+            alert(confirmacao)
+            alert(nome)
+        </script>
+    </fieldset>
+    
+</body>
+</html>
